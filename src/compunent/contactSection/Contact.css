@@ -1,0 +1,40 @@
+/* contact section */
+.contact{
+    background: var(--bg-color);
+    width: 100%;
+    opacity: 0;
+  }
+  .contact form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+  }
+  .contact form input,
+  .contact form textarea{
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin-bottom: .8rem;
+    border-radius: 5px;
+    padding: .7rem;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+  }
+  .contact form textarea{
+    resize: none;
+  }
+  .appear{
+    animation: appear 1s forwards;
+  }
+  @keyframes appear{
+    from{
+      transform: translateX(-80px);
+      opacity: 0;
+    }
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+  }
